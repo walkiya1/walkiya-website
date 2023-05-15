@@ -13,58 +13,53 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import Link from "next/link";
-import { useEffect } from "react";
-
-const NextBtn = () => {
-  return (
-    <button
-      type="button"
-      id="next-btn"
-      className="lg:absolute flex prev-btn right-0 lg:hover:bg-wk-blue hover:text-white ease-in-out transition duration-500 lg:translate-x-1/2 justify-center items-center lg:text-wk-blue lg:rounded-xl lg:w-14 lg:h-14 p-4 border-wk-blue lg:border bottom-1/2 top-1/2 z-[2]"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          fillRule="evenodd"
-          d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <span className="sr-only">Previous Button</span>
-    </button>
-  );
-};
-
-const PrevBtn = () => {
-  return (
-    <button
-      type="button"
-      id="prev-btn"
-      className="lg:absolute flex prev-btn left-0 lg:hover:bg-wk-blue hover:text-white ease-in-out transition duration-500 lg:-translate-x-1/2 justify-center items-center lg:text-wk-blue lg:rounded-xl lg:w-14 lg:h-14 p-4 border-wk-blue lg:border bottom-1/2 top-1/2 z-[2]"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          fillRule="evenodd"
-          d="M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z"
-          clipRule="evenodd"
-        />
-      </svg>
-      <span className="sr-only">Previous Button</span>
-    </button>
-  );
-};
+import Head from "next/head";
 
 export default function Home(): JSX.Element {
   return (
+    <>
+    <Head>
+  <meta charSet="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Walkiya Limited</title>
+  <meta
+    name="title"
+    content="Walkiya Limited"
+  />
+  <meta
+    name="description"
+    content="Walkiya is a leading provider of construction and IT Solutions in Nigeria, offering a full range of solutions including new construction, renovations, project management, design and engineering, web design and development, networking solutions and more, with our team of professionals who are trained and experienced in diverse professions to carry out the following services"
+  />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://walkiya.com.ng" />
+  <meta
+    property="og:title"
+    content="Walkiya Limited"
+  />
+  <meta
+    property="og:description"
+    content="Walkiya is a leading provider of construction and IT Solutions in Nigeria, offering a full range of solutions including new construction, renovations, project management, design and engineering, web design and development, networking solutions and more, with our team of professionals who are trained and experienced in diverse professions to carry out the following services"
+  />
+  <meta property="og:image" content="" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://walkiya.com.ng/" />
+  <meta
+    property="twitter:title"
+    content="Walkiya Limited"
+  />
+  <meta
+    property="twitter:description"
+    content="Walkiya is a leading provider of construction and IT Solutions in Nigeria, offering a full range of solutions including new construction, renovations, project management, design and engineering, web design and development, networking solutions and more, with our team of professionals who are trained and experienced in diverse professions to carry out the following services"
+  />
+  <meta property="twitter:image" content="" />
+  <link rel="shortcut icon" href="/icn//app_icon_192.png" type="image/x-icon" />
+  <link rel="manifest" href="/manifest.json"/>
+  <title>Walkiya Limited</title>
+</Head>
     <section className="md:pt-10 pt-6 z-[10] relative">
       <main className="min-h-screen dsk:max-w-7xl mr-auto ml-auto self-start w-full lg:p-20 pt-20 px-4">
         <div className="w-full h-[350px] md:h-[26rem] rounded-3xl lg:rounded-none relative overflow-hidden lg:overflow-visible">
@@ -100,7 +95,7 @@ export default function Home(): JSX.Element {
                   priority
                   quality={100}
                 />
-                <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full p-4 md:p-10 text-center grid md:grid-cols-8">
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-20 w-full h-full p-4 md:p-10 text-center grid md:grid-cols-8">
                   <div className="col-span-6 col-start-2 self-center z-10">
                     <h1 className="font-semibold text-2xl md:text-3xl xl:text-5xl leading-[1.2] mb-2 lg:text-4xl sm:text-3xl">
                       Let&apos;s help you find an office <br /> that&apos;s
@@ -142,7 +137,7 @@ export default function Home(): JSX.Element {
                   priority
                   quality={100}
                 />
-                <div className="absolute top-0 left-0 right-0 bottom-0 w-full h-full p-4 md:p-10 text-center grid md:grid-cols-8">
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-20 w-full h-full p-4 md:p-10 text-center grid md:grid-cols-8">
                   <div className="col-span-6 col-start-2 self-center z-10">
                     <h1 className="font-semibold text-2xl xl:text-5xl leading-[1.2] mb-2 lg:text-4xl sm:text-3xl">
                       Let&apos;s help you find a home <br /> that&apos;s perfect
@@ -176,8 +171,44 @@ export default function Home(): JSX.Element {
             </SwiperSlide>
           </Swiper>
           <div className="absolute lg:block text-white bg-white bg-opacity-10 sm:bg-opacity-30 lg:bg-transparent lg:static bottom-0 right-0 z-[2] flex flex-row-reverse items-center">
-            <NextBtn />
-            <PrevBtn />
+            <button
+              type="button"
+              id="next-btn"
+              className="lg:absolute flex prev-btn right-0 lg:hover:bg-wk-blue hover:text-white ease-in-out transition duration-500 lg:translate-x-1/2 justify-center items-center lg:text-wk-blue lg:rounded-xl lg:w-14 lg:h-14 p-4 border-wk-blue lg:border bottom-1/2 top-1/2 z-[2]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span className="sr-only">Previous Button</span>
+            </button>
+            <button
+              type="button"
+              id="prev-btn"
+              className="lg:absolute flex prev-btn left-0 lg:hover:bg-wk-blue hover:text-white ease-in-out transition duration-500 lg:-translate-x-1/2 justify-center items-center lg:text-wk-blue lg:rounded-xl lg:w-14 lg:h-14 p-4 border-wk-blue lg:border bottom-1/2 top-1/2 z-[2]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span className="sr-only">Previous Button</span>
+            </button>
           </div>
         </div>
 
@@ -227,7 +258,9 @@ export default function Home(): JSX.Element {
             <div className="flex gap-5 items-center">
               <div className="flex flex-col">
                 <p className="text-xl">Since</p>
-                <h1 className="md:text-9xl text-8xl font-bold text-wk-blue">2013</h1>
+                <h1 className="md:text-9xl text-8xl font-bold text-wk-blue">
+                  2013
+                </h1>
               </div>
               <div className="flex flex-col md:gap-2 gap-1">
                 <p className="md:text-xl">Celebrating</p>
@@ -567,5 +600,6 @@ export default function Home(): JSX.Element {
         </section>
       </main>
     </section>
+    </>
   );
 }

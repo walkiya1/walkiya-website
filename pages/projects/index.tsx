@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -70,6 +71,10 @@ export default function Projects() {
     : projects;
 
   return (
+    <>
+    <Head>
+    <title>Our Projects</title>
+    </Head>
     <section className="z-[10] relative">
       <Parallax
         bgImage="/image/building_plan.jpeg"
@@ -107,6 +112,14 @@ export default function Projects() {
               } py-2 mr-6 sm:mr-0 text-black relative disabled:before:scale-100 hover:before:scale-100 before:origin-left before:transition before:ease-linear before:duration-300 duration-500 before:scale-0 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[1px] before:bg-black`}
             >
               Architecture
+            </button>
+            <button
+              onClick={() => handleCategorySelect("Construction")}
+              className={`${
+                selectedCategory === "Construction" ? "before:scale-100 text-wk-blue before:bg-wk-blue" : ""
+              } py-2 mr-6 sm:mr-0 text-black relative disabled:before:scale-100 hover:before:scale-100 before:origin-left before:transition before:ease-linear before:duration-300 duration-500 before:scale-0 before:absolute before:left-0 before:bottom-0 before:w-full before:h-[1px] before:bg-black`}
+            >
+              Construction
             </button>
             <button
               onClick={() => handleCategorySelect("Web Development")}
@@ -162,6 +175,14 @@ export default function Projects() {
                 </li>
                 <li>
                   <button
+                    onClick={() => handleCategorySelect("Construction")}
+                    className={`text-black block px-8 py-2 text-center`}
+                  >
+                    Construction
+                  </button>
+                </li>
+                <li>
+                  <button
                     onClick={() => handleCategorySelect("Web Development")}
                     className={`text-black block px-8 py-2 text-center`}
                   >
@@ -177,20 +198,22 @@ export default function Projects() {
           {projects.map((project) => (
             <Link
               href={`projects/${project.slug}`}
-              className={`p-2 bg-gray-50 rounded-3xl grid transition-all duration-500 ease-in-out ${
+              className={`p-2 h-full bg-gray-50 flex flex-col rounded-3xl transition-all duration-500 ease-in-out ${
                 !selectedCategory || selectedCategory === project.category
                   ? "scale-100 opacity-100 animate-up"
                   : "scale-0 opacity-0 absolute -z-50"
               }`}
             >
+              <div className="flex-1">
               <Image
-                className="w-full h-full rounded-2xl"
+                className="w-full h-full object-cover object-center rounded-2xl"
                 src={project.image}
                 quality={100}
                 alt={""}
                 height={674}
                 width={674}
               />
+              </div>
               <div className="px-3 mt-3">
                 <h1 className="py-1">{project.name}</h1>
                 <div className="flex items-end justify-between text-sm pb-2">
@@ -203,5 +226,6 @@ export default function Projects() {
         </div>
       </div>
     </section>
+    </>
   );
 }

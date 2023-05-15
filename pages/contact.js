@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Obfuscate from "react-obfuscate";
@@ -18,6 +19,10 @@ export default function Contact() {
   },[formData])
 
   return (
+    <>
+    <Head>
+    <title>Contact Us</title>
+    </Head>
     <section className="md:pt-10 pt-6 z-[10] relative">
     <main className="flex min-h-screen flex-col items-center justify-between md2:px-24 md:px-12 sm:px-8 px-4 py-24">
       <section className="pt-28">
@@ -227,5 +232,6 @@ export default function Contact() {
       </section>
     </main>
     </section>
+    </>
   );
 }

@@ -1,9 +1,14 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Parallax } from "react-parallax"
 
 export default function Services() {
   return (
+    <>
+    <Head>
+    <title>About Us</title>
+    </Head>
     <section className="md:pt-10 pt-6 z-[10] relative">
       <div className="w-full lg:p-20 lg:pt-32 pt-28 px-4">
         <div className="sm:p-11 sm:py-11 py-4 px-4 grid gap-4">
@@ -106,14 +111,14 @@ export default function Services() {
         </div>
         <div className="col-span-1 gap-4 grid grid-flow-row">
           <div className="col-span-1 flex gap-3">
-            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-40">
+            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-60">
               01.
             </h1>
             <div>
-              <h3 className="text-xl font-medium text-neutral-600">
+              <h3 className="text-xl font-medium text-gray-900">
                 Initial consultation
               </h3>
-              <p className="text-sm text-neutral-300">
+              <p className="text-sm text-black opacity-60">
                 We begin every project with an initial consultation to
                 understand our clients&apos; needs and goals. This allows us to
                 develop a plan that meets their requirements and budget.
@@ -121,14 +126,14 @@ export default function Services() {
             </div>
           </div>
           <div className="col-span-1 flex gap-3">
-            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-40">
+            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-60">
               02.
             </h1>
             <div>
-              <h3 className="text-xl font-medium text-neutral-600">
+              <h3 className="text-xl font-medium text-gray-900">
                 Design and planning
               </h3>
-              <p className="text-sm text-neutral-300">
+              <p className="text-sm text-black opacity-60">
                 Once we have a clear understanding of our clients&apos; needs, we
                 begin the design and planning process. Our team of design and
                 engineering professionals works closely with our clients to
@@ -138,14 +143,14 @@ export default function Services() {
             </div>
           </div>
           <div className="col-span-1 flex gap-3">
-            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-40">
+            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-60">
               03.
             </h1>
             <div>
-              <h3 className="text-xl font-medium text-neutral-600">
+              <h3 className="text-xl font-medium text-gray-900">
                 Project execution
               </h3>
-              <p className="text-sm text-neutral-300">
+              <p className="text-sm text-black opacity-60">
                 After the design and planning process is complete, we move on to
                 the project execution phase where our team of skilled
                 professionals is responsible for carrying out the construction
@@ -155,14 +160,14 @@ export default function Services() {
             </div>
           </div>
           <div className="col-span-1 flex gap-3">
-            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-40">
+            <h1 className="text-3xl font-semibold text-wk-blue text-opacity-60">
               04.
             </h1>
             <div>
-              <h3 className="text-xl font-medium text-neutral-600">
+              <h3 className="text-xl font-medium text-gray-900">
                 Maintenance and repair
               </h3>
-              <p className="text-sm text-neutral-300">
+              <p className="text-sm text-black opacity-60">
                 In addition to our construction services, we also offer a range
                 of maintenance and repair services to keep our clients&apos;
                 properties in top condition. Our team is skilled in a wide range
@@ -201,5 +206,6 @@ export default function Services() {
         </Link>
       </div>
     </section>
+    </>
   );
 }
