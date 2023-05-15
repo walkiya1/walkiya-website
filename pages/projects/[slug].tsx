@@ -39,39 +39,7 @@ const projects = [
         thumbnail: "/image/DSC_1223.JPG",
       },
     ],
-  },
-  {
-    id: 2,
-    name: "Project B",
-    role: "Architecture",
-    category: "Architecture",
-    image: "/image/building_plan.jpeg",
-    slug: "project-b",
-  },
-  {
-    id: 3,
-    name: "Project C",
-    role: "Library Development",
-    category: "Library Development",
-    image: "/image/building_plan.jpeg",
-    slug: "project-c",
-  },
-  {
-    id: 4,
-    name: "Project D",
-    role: "Construction",
-    category: "Construction",
-    image: "/image/building_plan.jpeg",
-    slug: "project-c",
-  },
-  {
-    id: 5,
-    name: "Project E",
-    role: "Web Development",
-    category: "Web Development",
-    image: "/image/building_plan.jpeg",
-    slug: "project-d",
-  },
+  }
 ];
 
 // Generates `/projects/1` and `/projects/2`
