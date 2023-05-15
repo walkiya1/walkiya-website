@@ -1,0 +1,14 @@
+{
+  "name": "Walkiya Limited",
+  "short_name": "Walkiya",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "16x16" },
+    { "src": "/icn/app_icon_64.png", "sizes": "64x64" },
+    { "src": "/icn/app_icon_128.png", "sizes": "128x128" },
+    { "src": "/icn/app_icon_192.png", "sizes": "192x192" }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}

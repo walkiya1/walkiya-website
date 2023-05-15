@@ -13,11 +13,11 @@ import { Parallax } from "react-parallax";
 const projects = [
   {
     id: 1,
-    name: "Project A",
-    role: "Web Development",
-    category: "Web Development",
-    image: "/image/building_plan.jpeg",
-    slug: "project-a"
+    name: "Remodelling of lecture Hall",
+    role: "Construction",
+    category: "Construction",
+    image: "/image/DSC_1223.JPG",
+    slug: "remodelling"
   },
   {
     id: 2,
