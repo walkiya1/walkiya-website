@@ -197,6 +197,7 @@ export default function Projects() {
         <div className="grid relative lg:grid-cols-2 grid-cols-1 xl:grid-cols-3 py-10 gap-5">
           {projects.map((project) => (
             <Link
+              key={project.id}
               href={`projects/${project.slug}`}
               className={`p-2 h-full bg-gray-50 flex flex-col rounded-3xl transition-all duration-500 ease-in-out ${
                 !selectedCategory || selectedCategory === project.category

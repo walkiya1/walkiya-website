@@ -15,7 +15,7 @@ import "swiper/css/effect-fade";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function index() {
+export default function About() {
   const [currentTab, setCurrentTab] = useState("1");
   const tabs = [
     {
