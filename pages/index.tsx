@@ -427,10 +427,10 @@ export default function Home(): JSX.Element {
                     Library Development
                   </h1>
                   <p className="text-sm opacity-60">
-                    We offer comprehensive solutions to enhance your library's
+                    We offer comprehensive solutions to enhance your library&apos;s
                     functionality and services. From digital catalog systems to
                     innovative library management software, we provide tailored
-                    solutions to optimize your library's operations and improve
+                    solutions to optimize your library&apos;s operations and improve
                     user experiences.
                   </p>
                 </div>
