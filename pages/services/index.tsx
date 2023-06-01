@@ -29,7 +29,7 @@ export default function Services() {
         bgImageAlt=""
         strength={-200}
     >
-      <div className="w-full lg:h-[40vh] h-[20vh]"></div>
+      <div className="w-full h-[40vh]"></div>
     </Parallax>
 
       <div className="dsk:max-w-7xl mr-auto ml-auto self-start w-full gap-4 p-16 lg:gap-24 lg:p-20 lg:pb-0 lg:pt-32 px-4 flex flex-col-reverse md:grid md:grid-cols-2">
@@ -49,17 +49,17 @@ export default function Services() {
           bgImageAlt=""
           strength={200}
         >
-          <div className="col-span-1 lg:min-h-[500px] min-h-[400px]">
+          <div className="col-span-1 lg:min-h-[500px] sm:min-h-[400px] min-h-[300px]">
           </div>
         </Parallax>
       </div>
       <div className="dsk:max-w-7xl mr-auto ml-auto self-start w-full gap-4 lg:gap-24 lg:p-20 lg:pb-0 lg:pt-32 px-4 grid md:grid-cols-2">
           <Parallax
-          bgImage="/image/building_plan.jpeg"
+          bgImage="/image/it.jpg"
           bgImageAlt=""
           strength={200}
         >
-          <div className="col-span-1 lg:min-h-[500px] min-h-[400px]">
+          <div className="col-span-1 lg:min-h-[500px] sm:min-h-[400px] min-h-[300px]">
           </div>
         </Parallax>
         <div className="col-span-1 flex flex-col gap-4">
@@ -91,7 +91,7 @@ export default function Services() {
           bgImageAlt=""
           strength={200}
         >
-          <div className="col-span-1 lg:min-h-[500px] min-h-[400px]">
+          <div className="col-span-1 lg:min-h-[500px] sm:min-h-[400px] min-h-[300px]">
           </div>
         </Parallax>
       </div>

@@ -61,7 +61,7 @@ export default function Footer() {
                 <Link href="/" className="text-sm">
                   Our Story
                 </Link>
-                <Link href="/about#anniversary" className="text-sm">
+                <Link href="/#anniversary" className="text-sm">
                   10<sup>th</sup> Anniversary
                 </Link>
                 <Link href="/about/team" className="text-sm">

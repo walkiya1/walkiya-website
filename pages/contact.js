@@ -1,10 +1,14 @@
 "use client";
 import Head from "next/head";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Obfuscate from "react-obfuscate";
 
 export default function Contact() {
+  const [sent, setSent] = useState({
+    status: false,
+    message: ""
+  })
   const [formData, setFormData] = useState({
     fullname: "",
     emailAddress: "",
@@ -14,9 +18,73 @@ export default function Contact() {
     message: "",
   });
 
-  useEffect(()=>{
+  const fullname = useRef()
+  const emailAddress = useRef()
+  const tel = useRef()
+  const company = useRef()
+  const service = useRef()
+  const message = useRef()
+
+  async function handleFormSubmission(e) {
+    e.preventDefault();
+
     console.log(formData);
-  },[formData])
+
+    const data = {
+      fullname: formData.fullname,
+      email: formData.emailAddress,
+      tel: formData.tel,
+      message: formData.message,
+      company: formData.company,
+      service: formData.service
+    };
+
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/hello";
+
+    const options = {
+      // The method is POST because we are sending data.
+      method: "POST",
+      // Tell the server we're sending JSON.
+      headers: {
+        "Content-Type": "application/json",
+      },
+      // Body of the request is the JSON data we created above.
+      body: JSONdata,
+    };
+
+    const response = await fetch(endpoint, options);
+
+    // Get the response data from server as JSON.
+    // If server returns the name submitted, that means the form works.
+    const result = await response.json();
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      emailAddress: "",
+      tel: "",
+      message: "",
+      company: "",
+      service: ""
+    });
+
+    setSent({
+      status: result.status,
+      message: result.message
+    })
+
+    setTimeout(()=>{
+      setSent({
+        status: false,
+        message: ""
+      })
+    },3000)
+  }
+
+  function focus(params) {
+    params.current.focus();
+  }
 
   return (
     <>
@@ -37,8 +105,8 @@ export default function Contact() {
 
         <div className="md2:grid md2:grid-cols-3 flex flex-col-reverse gap-24">
           <div className="md2:col-span-2">
-            <form onSubmit={(e) => e.preventDefault()}>
-              <div className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
+            <form onSubmit={(e) => handleFormSubmission(e)}>
+              <div onClick={()=>focus(fullname)} className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
                 <h6 className="absolute left-0 top-0 text-[#B5BBBD] font-normal text-base">
                   01
                 </h6>
@@ -46,6 +114,7 @@ export default function Contact() {
                   What’s your name?
                 </label>
                 <input
+                  ref={fullname}
                   className="sm:col-span-1 border-none outline-none text-xl sm:text-2xl placeholder:font-light"
                   type="text"
                   id="name"
@@ -55,7 +124,7 @@ export default function Contact() {
                   onChange={(e)=>setFormData({...formData, fullname: e.target.value})}
                 />
               </div>
-              <div className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
+              <div onClick={()=>focus(emailAddress)} className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
                 <h6 className="absolute left-0 top-0 text-[#B5BBBD] font-normal text-base">
                   02
                 </h6>
@@ -63,6 +132,7 @@ export default function Contact() {
                   What’s your email address?
                 </label>
                 <input
+                  ref={emailAddress}
                   className="sm:col-span-1 border-none outline-none text-xl sm:text-2xl placeholder:font-light"
                   type="email"
                   id="email"
@@ -72,7 +142,7 @@ export default function Contact() {
                   onChange={(e)=>setFormData({...formData, emailAddress: e.target.value})}
                 />
               </div>
-              <div className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
+              <div onClick={()=>focus(tel)} className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
                 <h6 className="absolute left-0 top-0 text-[#B5BBBD] font-normal text-base">
                   03
                 </h6>
@@ -80,6 +150,7 @@ export default function Contact() {
                   What&apos;s your phone number? <span className="text-xs text-black text-opacity-50">(optional)</span>
                 </label>
                 <input
+                  ref={tel}
                   className="sm:col-span-1 border-none outline-none text-xl sm:text-2xl placeholder:font-light"
                   type="tel"
                   id="tel"
@@ -89,7 +160,7 @@ export default function Contact() {
                   onChange={(e)=>setFormData({...formData, tel: e.target.value})}
                 />
               </div>
-              <div className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
+              <div onClick={()=>focus(company)} className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
                 <h6 className="absolute left-0 top-0 text-[#B5BBBD] font-normal text-base">
                   04
                 </h6>
@@ -97,6 +168,7 @@ export default function Contact() {
                   What&apos;s the name of your organization?
                 </label>
                 <input
+                  ref={company}
                   className="sm:col-span-1 border-none outline-none text-xl sm:text-2xl placeholder:font-light"
                   type="text"
                   id="company"
@@ -107,7 +179,7 @@ export default function Contact() {
                   onChange={(e)=>setFormData({...formData, company: e.target.value})}
                 />
               </div>
-              <div className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
+              <div onClick={()=>focus(service)} className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
                 <h6 className="absolute left-0 top-0 text-[#B5BBBD] font-normal text-base">
                   05
                 </h6>
@@ -115,6 +187,7 @@ export default function Contact() {
                   What services are you looking for?
                 </label>
                 <input
+                  ref={service}
                   className="sm:col-span-1 border-none outline-none text-xl sm:text-2xl placeholder:font-light"
                   type="text"
                   id="service"
@@ -125,7 +198,7 @@ export default function Contact() {
                   onChange={(e)=>setFormData({...formData, service: e.target.value})}
                 />
               </div>
-              <div className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
+              <div onClick={()=>focus(message)} className="md2:pt-0 pt-0 md2:px-16 pl-8 py-6 md2:py-14 sm:max-w-[90%] mb-10 border-b relative grid">
                 <h6 className="absolute left-0 top-0 text-[#B5BBBD] font-normal text-base">
                   06
                 </h6>
@@ -133,6 +206,7 @@ export default function Contact() {
                   Your message
                 </label>
                 <textarea
+                  ref={message}
                   className="sm:col-span-1 border-none resize-none outline-none text-base placeholder:text-xl sm:placeholder:text-2xl placeholder:font-light"
                   type="text"
                   id="message"
@@ -145,7 +219,7 @@ export default function Contact() {
                 />
               </div>
               <div className=" max-w-[90%] mb-10 relative grid gap-10">
-                <div className="flex gap-3 items-center">
+                <div className="flex md:gap-3 gap-1 items-center">
                   <input required type="checkbox" className="text-wk-blue " />
                   <label className="text-neutral-600 text-sm font-light">
                     I am bound by the terms of the Service I accept{" "}
@@ -159,6 +233,8 @@ export default function Contact() {
                   >
                     Send it!
                   </button>
+                  
+                  <p className={`mt-3 ease-in-out transition-opacity duration-300 ${sent.status === true ? "opacity-100" : "opacity-0"}`}>{sent.status}</p>
                 </div>
               </div>
             </form>

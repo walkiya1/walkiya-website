@@ -47,7 +47,7 @@ export default function Header() {
       } transition-all duration-500`}
     >
       <div className="dsk:max-w-7xl mr-auto ml-auto self-start w-full">
-        <nav className="sm:px-16 h-[80px] px-5 items-center grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-3">
+        <nav className="sm:px-16 h-[80px] 2xl:h-28 px-5 items-center grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-3">
           <div className="col-span-1">
             <span className="lg:hidden">
               <Link
@@ -55,7 +55,7 @@ export default function Header() {
                 href="/"
               >
                 <Image
-                  className="sm:w-16 h-full"
+                  className="sm:w-16 h-full z-1"
                   src="/icn/app_icon_64.svg"
                   alt=""
                   width={40}
@@ -153,7 +153,7 @@ export default function Header() {
 
       <div
         className={`fixed top-0 left-0 right-0 bottom-0 w-full h-full lg:hidden ${
-          mobileHidden ? "-z-10 pointer-events-none" : "z-10"
+          mobileHidden ? "pointer-events-none" : "z-10"
         } transition-all duration-500`}
       >
         <div

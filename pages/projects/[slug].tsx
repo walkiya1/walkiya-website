@@ -23,7 +23,7 @@ const projects = [
     name: "Remodelling of Lecture Hall",
     role: "Construction",
     category: "Construction",
-    image: "/image/DSC_1223.JPG",
+    image: "https://walkiya.com.ng/image/DSC_1223.JPG",
     slug: "remodelling",
     pictures: [
       {
@@ -76,31 +76,31 @@ export default function Slug(props: any) {
         <title>{data.name}</title>
       </Head>
       <section className="z-[10] relative">
-        <Parallax bgImage={data.image} bgImageAlt="" strength={-200}>
-          <div className="lg:p-16 lg:pt-48 md:p-8 p-4 pt-48 min-h-screen grid place-items-center bg-black bg-opacity-20 text-white">
+        <Parallax bgImage={data.image} className="bg-no-repeat bg-cover" bgImageAlt="">
+          <div className="lg:p-16 lg:pt-48 p-8 pt-48 lg:min-h-screen grid place-items-center bg-black bg-opacity-20 text-white">
             <div className="dsk:max-w-7xl mr-auto ml-auto grid place-items-center">
               <div className="grid gap-4 w-full">
-                <h1 className="text-8xl leading-snug font-medium text-white text-center">
+                <h1 className="lg:text-8xl md:text-8xl text-5xl sm:text-7xl leading-snug font-medium text-white text-center">
                   {data.name}
                 </h1>
               </div>
             </div>
           </div>
         </Parallax>
-        <div className="dsk:max-w-7xl mr-auto ml-auto self-start w-full lg:p-20 px-4 lg:px-[10%] grid grid-cols-7 gap-12">
-          <div className="col-span-2">
+        <div className="dsk:max-w-7xl mr-auto ml-auto self-start w-full lg:p-20 py-16 px-4 lg:px-[10%] grid md:grid-cols-7 gap-5 md:gap-12">
+          <div className="md:col-span-2">
             <h3 className="text-xl mb-3">Project Details</h3>
             <p>
               <span className="text-sm text-opacity-50 text-black">Status</span>{" "}
               - <span className="text-wk-blue">Completed</span>
             </p>
           </div>
-          <div className="grid gap-12 col-span-5">
+          <div className="grid gap-12 md:col-span-5">
             <p className="text-xl font-light">
               The renovation of Joyce udensi hostel at the university of
               calabar, cross river state, nigeria.
             </p>
-            <div className="grid grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-3 gap-8">
               <div className="col-span-1 grid gap-3">
                 <p className="text-opacity-50 text-black">client</p>
                 <p>University of Calabar</p>
@@ -118,7 +118,7 @@ export default function Slug(props: any) {
         </div>
         <div className="dsk:max-w-7xl mr-auto ml-auto self-start w-full lg:p-20 px-4">
           <h1 className="text-2xl mb-8 text-wk-blue">Project Gallery</h1>
-          <div className="h-[80vh] relative">
+          <div className="h-[80vh] relative rounded-3xl max-h-[420px] md:max-h-none md:rounded-none overflow-hidden md:overflow-visible">
             <Swiper
               slidesPerView={2}
               spaceBetween={40}
@@ -129,6 +129,15 @@ export default function Slug(props: any) {
                 nextEl: ".next-btn",
                 prevEl: ".prev-btn",
                 enabled: true,
+              }}
+              breakpoints={{
+                280: { slidesPerView: 1 },
+                440: { slidesPerView: 1 },
+                576: { slidesPerView: 1 },
+                768: { slidesPerView: 1 },
+                992: { slidesPerView: 2 },
+                1200: { slidesPerView: 2 },
+                1400: { slidesPerView: 2 },
               }}
               className="overflow-visible h-full"
             >
@@ -150,7 +159,7 @@ export default function Slug(props: any) {
                 );
               })}
             </Swiper>
-            <div className="absolute lg:block text-white bg-white bg-opacity-10 sm:bg-opacity-30 lg:bg-transparent lg:static bottom-0 right-0 z-[2] flex flex-row-reverse items-center">
+            <div className="absolute lg:block text-white lg:bg-white bg-black bg-opacity-30 lg:bg-transparent lg:static bottom-0 right-0 z-[2] flex flex-row-reverse items-center">
               <button
                 type="button"
                 id="next-btn"

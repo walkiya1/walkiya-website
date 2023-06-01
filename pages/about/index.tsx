@@ -38,7 +38,10 @@ export default function About() {
 
   return (
     <section className="z-[10] relative">
-      <div className="min-h-[60vh] bg-opacity-20 bg-wk-blue"></div>
+      <div className="h-[60vh] w-full bg-opacity-30 bg-wk-blue relative grid items-end justify-start p-10">
+        <h1 className="text-7xl text-black">Who we are</h1>
+      </div>
+
       <main className="min-h-screen dsk:max-w-7xl mr-auto ml-auto self-start w-full">
         <div className="sm:p-11 sm:py-11 py-4 px-4 bg-white">
           <div className="sm:grid">
@@ -141,19 +144,19 @@ export default function About() {
           <div className="grid-col-1 grid grid-cols-2 gap-6">
             <div className="grid place-items-center text-center">
               <p className="text-2xl">200+</p>
-              <p className="text-sm" >Completed projects</p>
+              <p className="text-sm">Completed projects</p>
             </div>
             <div className="grid place-items-center">
               <p className="text-2xl">10+</p>
-              <p className="text-sm" >Years of Experience</p>
+              <p className="text-sm">Years of Experience</p>
             </div>
             <div className="grid place-items-center">
               <p className="text-2xl">50+</p>
-              <p className="text-sm" >Happy Clients</p>
+              <p className="text-sm">Happy Clients</p>
             </div>
             <div className="grid place-items-center">
               <p className="text-2xl">5+</p>
-              <p className="text-sm" >Dedicated Teams</p>
+              <p className="text-sm">Dedicated Teams</p>
             </div>
           </div>
           <div className="grid-col-1">
@@ -166,139 +169,6 @@ export default function About() {
               facere a quasi ipsum eveniet atque mollitia libero quisquam
               laboriosam, exercitationem laudantium similique accusamus?
             </p>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center justify-between lg:gap-12 gap-8 pt-12 md:p-16 sm:p-12 p-8 lg:pt-16 lg:p-24">
-          <div className="lg:text-center xl:px-48 lg:px-24 md:px-12 mb-8">
-            <h1 className="capitalize lg:text-6xl text-4xl font-medium my-3 text-wk-blue">Meet the Team</h1>
-            <p className="">
-              Our teams of highly ... professionals are always invested in
-              ensuring that our company is always operating at the highest level
-              of integrity, transparency, and accountability. in turn ensuring
-              that we are always acting in the best interest of our clients,
-              employees and other stakeholders.
-            </p>
-          </div>
-          <div className="grid gap-12">
-            <div className="grid md:grid-cols-3 sm:py-11 lg:p-0 gap-7">
-              <div className="col-span-1 w-full">
-                <Image
-                  className="w-full aspect-[1/1] object-cover"
-                  src="/img/team/dmc.jpg"
-                  alt=""
-                  width={290}
-                  height={370}
-                />
-                <div className="mt-4">
-                  <p className="text-2xl font-semibold">Dominic Egwuda</p>
-                  <p className="opacity-40 py-2">Chief Executive Officer</p>
-                  <span className="bg-gray-50 inline-block text-gray-700 text-sm font-medium mr-2 px-2.5 py-1 rounded dark:text-gray-300">
-                    NBA
-                  </span>
-                </div>
-              </div>
-              <div className="col-span-1 w-full">
-                <Image
-                  className="w-full aspect-[1/1] object-cover"
-                  src="/img/team/dmc.jpg"
-                  alt=""
-                  width={290}
-                  height={370}
-                />
-                <div className="mt-4">
-                  <p className="text-2xl font-semibold">Dominic Egwuda</p>
-                  <p className="opacity-40 py-2">Chief Executive Officer</p>
-                  <p className="bg-gray-50 inline-block text-gray-700 text-sm font-medium mr-2 px-2.5 py-1 rounded dark:text-gray-300">
-                    NBA
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-1 w-full">
-                <Image
-                  className="w-full aspect-[1/1] object-cover"
-                  src="/img/team/dmc.jpg"
-                  alt=""
-                  width={290}
-                  height={370}
-                />
-                <div className="mt-4">
-                  <p className="text-2xl font-semibold">Dominic Egwuda</p>
-                  <p className="opacity-40 py-2">Chief Executive Officer</p>
-                  <p className="bg-gray-50 inline-block text-gray-700 text-sm font-medium mr-2 px-2.5 py-1 rounded dark:text-gray-300">
-                    NBA
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 sm:py-11 lg:p-0 md:gap-7 gap-3">
-              <div className="col-span-1">
-                <Image
-                  className="w-full aspect-[1/1.2] object-cover"
-                  src="/img/team/dmc.jpg"
-                  alt=""
-                  width={290}
-                  height={370}
-                />
-                <div className="mt-4">
-                  <p className="lg:text-xl font-medium">Dominic Egwuda</p>
-                  <p className="opacity-40 py-2 text-sm">
-                    Chief Executive Officer
-                  </p>
-                  <p className="bg-gray-50 inline-block text-gray-700 text-sm font-medium mr-2 px-2.5 py-1 rounded dark:text-gray-300">
-                    NBA
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-1">
-                <Image
-                  className="w-full aspect-[1/1.2] object-cover"
-                  src="/img/team/dmc.jpg"
-                  alt=""
-                  width={290}
-                  height={370}
-                />
-                <div className="mt-4">
-                  <p className="lg:text-xl font-semibold">Dominic Egwuda</p>
-                  <p className="opacity-40 py-2">Chief Executive Officer</p>
-                  <span className="bg-gray-50 inline-block text-gray-700 text-sm font-medium mr-2 px-2.5 py-1 rounded dark:text-gray-300">
-                    NBA
-                  </span>
-                </div>
-              </div>
-              <div className="col-span-1">
-                <Image
-                  className="w-full aspect-[1/1.2] object-cover"
-                  src="/img/team/dmc.jpg"
-                  alt=""
-                  width={290}
-                  height={370}
-                />
-                <div className="mt-4">
-                  <p className="lg:text-xl font-semibold">Dominic Egwuda</p>
-                  <p className="opacity-40 py-2">Chief Executive Officer</p>
-                  <p className="bg-gray-50 inline-block text-gray-700 text-sm font-medium mr-2 px-2.5 py-1 rounded dark:text-gray-300">
-                    NBA
-                  </p>
-                </div>
-              </div>
-              <div className="col-span-1">
-                <Image
-                  className="w-full aspect-[1/1.2] object-cover"
-                  src="/img/team/dmc.jpg"
-                  alt=""
-                  width={290}
-                  height={370}
-                />
-                <div className="mt-4">
-                  <p className="lg:text-xl font-semibold">Dominic Egwuda</p>
-                  <p className="opacity-40 py-2">Chief Executive Officer</p>
-                  <p className="bg-gray-50 inline-block text-gray-700 text-sm font-medium mr-2 px-2.5 py-1 rounded dark:text-gray-300">
-                    NBA
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -472,7 +342,7 @@ export default function About() {
         </section>
       </main>
 
-      {/* <div className="lg:min-h-[40vh] lg:grid lg:grid-cols-2 items-center md:px-24 md:py-16 px-8 py-12 bg-opacity-20 bg-wk-blue">
+      <div className="lg:min-h-[40vh] lg:grid lg:grid-cols-2 items-center md:px-24 md:py-16 px-8 py-12 bg-opacity-20 bg-wk-blue">
         <div className="col-span-1">
           <p>They make it possible</p>
           <h1 className="text-5xl mt-2">Our Team</h1>
@@ -489,7 +359,7 @@ export default function About() {
             </span>
           </p>
           <Link
-            href="/about/team"
+            href="/team"
             className="py-2 px-5 inline-block text-wk-blue bg-wk-blue bg-opacity-10 text-base rounded-lg hover:bg-opacity-100 hover:text-white transition ease-linear duration-300"
           >
             <div className="flex gap-2 items-center">
@@ -510,7 +380,7 @@ export default function About() {
             </div>
           </Link>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 }
