@@ -1,6 +1,6 @@
 version: '3'
 services:
   web:
-    image: walkiya_website:latest
+    image: walkiya-website:latest
     ports:
       - "3101:3101"
