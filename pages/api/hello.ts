@@ -41,7 +41,7 @@ export default async function handler(
 
   let info = await transporter.sendMail({
     from: API_USER_ID, // sender address
-    to: "rhoadesmccarthy@gmail.com", // list of receivers
+    to: "business@walkiya.com.ng", // list of receivers
     subject: "Message form Website Contact", // Subject line
     text: `name: ${fullname}, email: ${email}, company: ${company}, phone: ${tel}, service: ${service}, message: ${message}`,
   });
