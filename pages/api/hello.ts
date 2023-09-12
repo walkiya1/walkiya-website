@@ -30,7 +30,7 @@ export default async function handler(
   // });
 
   let transporter = nodemailer.createTransport({
-    host: "smtp.elasticemail.com",
+    host: "mail.walkiya.com.ng",
     port: 2525,
     secure: false, // true for 465, false for other ports
     auth: {
