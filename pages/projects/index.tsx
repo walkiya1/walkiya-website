@@ -17,7 +17,7 @@ const projects = [
     name: "Remodelling of lecture Hall",
     role: "Construction",
     category: "Construction",
-    image: "/image/DSC_1223.JPG",
+    image: "https://res.cloudinary.com/dkgpemhen/image/upload/v1701248032/projects/hjgalhqfxkzpdcvm9d3l.jpg",
     slug: "remodelling"
   }
 ];

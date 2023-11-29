@@ -7,6 +7,8 @@ type Data = {
   status: boolean;
 };
 
+var API_HOST = process.env.API_HOST;
+var API_POST = process.env.API_POST;
 var API_USER_ID = process.env.API_USER_ID;
 var API_SECRET = process.env.API_SECRET;
 
@@ -30,8 +32,8 @@ export default async function handler(
   // });
 
   let transporter = nodemailer.createTransport({
-    host: "mail.walkiya.com.ng",
-    port: 2525,
+    host: API_HOST,
+    port: API_POST,
     secure: false, // true for 465, false for other ports
     auth: {
       user: API_USER_ID, // generated ethereal user

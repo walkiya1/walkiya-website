@@ -25,7 +25,7 @@ export default function Services() {
       </div>
 
       <Parallax
-        bgImage="/12/pexels-photo-4513940-1.webp"
+        bgImage="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249581/walkiya-website/12/diuplc3tcnlqzgriokd8.webp"
         bgImageAlt=""
         strength={-200}
     >
@@ -45,7 +45,7 @@ export default function Services() {
           </p>
         </div>
     <Parallax
-          bgImage="/12/protected-steel-concrete-high-rise-under-construction.jpg"
+          bgImage="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249584/walkiya-website/12/eczuxkx8n1nqky3enelg.jpg"
           bgImageAlt=""
           strength={200}
         >
@@ -55,7 +55,7 @@ export default function Services() {
       </div>
       <div className="dsk:max-w-7xl mr-auto ml-auto self-start w-full gap-4 lg:gap-24 lg:p-20 lg:pb-0 lg:pt-32 px-4 grid md:grid-cols-2">
           <Parallax
-          bgImage="/image/it.jpg"
+          bgImage="https://res.cloudinary.com/dkgpemhen/image/upload/v1701248377/walkiya-website/yxtwtsttyhtdjr8ck8dp.jpg"
           bgImageAlt=""
           strength={200}
         >
@@ -87,7 +87,7 @@ export default function Services() {
           <div className="w-full grid"></div>
         </div>
         <Parallax
-          bgImage="/12/gettyimages-692061433_custom-187a6b394207014edeaa2421538fb0e4acd4187e.jpg"
+          bgImage="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249577/walkiya-website/12/nhv9zibokrz3qaejbdrg.jpg"
           bgImageAlt=""
           strength={200}
         >

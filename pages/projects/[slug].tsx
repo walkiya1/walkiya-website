@@ -23,20 +23,20 @@ const projects = [
     name: "Remodelling of Lecture Hall",
     role: "Construction",
     category: "Construction",
-    image: "https://walkiya.com.ng/image/DSC_1223.JPG",
+    image: "https://res.cloudinary.com/dkgpemhen/image/upload/v1701248032/projects/hjgalhqfxkzpdcvm9d3l.jpg",
     slug: "remodelling",
     pictures: [
       {
         key: 1,
-        thumbnail: "/image/DSC_1223.JPG",
+        thumbnail: "https://res.cloudinary.com/dkgpemhen/image/upload/v1701248032/projects/hjgalhqfxkzpdcvm9d3l.jpg",
       },
       {
         key: 2,
-        thumbnail: "/img/projects/p-b-1.jpeg",
+        thumbnail: "https://res.cloudinary.com/dkgpemhen/image/upload/v1701247059/projects/evovlqt0wlzoumadtrjn.jpg",
       },
       {
         key: 3,
-        thumbnail: "/image/DSC_1223.JPG",
+        thumbnail: "https://res.cloudinary.com/dkgpemhen/image/upload/v1701248032/projects/hjgalhqfxkzpdcvm9d3l.jpg",
       },
     ],
   }

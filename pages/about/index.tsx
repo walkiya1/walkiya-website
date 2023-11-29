@@ -198,7 +198,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/1537815211-11-usman-dan-fodio-university.jpg"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249593/walkiya-website/12/fmsmf5pxfxuojntogo3d.webp"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -211,7 +211,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/EYooTBnWoAU8xyf.jpg"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249551/walkiya-website/12/qc48bybvfpbwm04xnnjg.jpg"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -224,7 +224,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/Federal-Polytechnic-Ukana-School-Fees.webp"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249552/walkiya-website/12/jgtlbfxjiqqxgle1v5ks.webp"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -237,7 +237,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/FUKashere.jpg"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249553/walkiya-website/12/yyasgxrsvtij6mueppv7.jpg"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -250,7 +250,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/FUTA_Seal.jpg"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249555/walkiya-website/12/d5wzlvytl1lfqvlzt7qy.jpg"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -263,7 +263,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/How-To-Gain-Admission-Into-UNICAL-scaled-1.webp"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249559/walkiya-website/12/stze5vnhbot6ustx6hal.webp"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -276,7 +276,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/Nigeria_Ruga_Kruco.png"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249575/walkiya-website/12/cmr01b6t8r7pfjw6yopb.png"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -289,7 +289,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/Oju-Colleges-of-Education-Courses.jpg"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249575/walkiya-website/12/wgvtgkm0zsn8jh9gwjir.jpg"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -302,7 +302,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/Taraba-State-University-TASU.jpg"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249589/walkiya-website/12/cmspxnncqr4ftog8n2na.jpg"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -315,7 +315,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/udusok.webp"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249593/walkiya-website/12/fmsmf5pxfxuojntogo3d.webp"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
@@ -328,7 +328,7 @@ export default function About() {
             <SwiperSlide>
               <div className="w-full h-full">
                 <Image
-                  src="/12/University-of-Uyo-_-Gurusprovince.jpeg"
+                  src="https://res.cloudinary.com/dkgpemhen/image/upload/v1701249594/walkiya-website/12/vxk90wmbhf1y5xkzedg4.jpg"
                   className="object-contain self-center justify-self-center aspect-square"
                   width={100}
                   height={100}
