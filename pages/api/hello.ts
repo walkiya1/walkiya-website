@@ -34,7 +34,7 @@ export default async function handler(
   let transporter = nodemailer.createTransport({
     host: API_HOST,
     port: API_POST,
-    secure: false, // true for 465, false for other ports
+    secure: true, // true for 465, false for other ports
     auth: {
       user: API_USER_ID, // generated ethereal user
       pass: API_SECRET, // generated ethereal password
